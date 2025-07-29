@@ -26,11 +26,13 @@ Là một phần mềm mã hóa mã nguồn mở để tạo **mạng riêng ả
 
 ## 🛠️ Cách giải
 
-1. 
----
-
-## 🏁 Password
+1. Bấm vào nút `Start Machine` rồi tải file `.opvn` về và kết nối bằng `openvpn`
 
 ```
+sudo openvpn duydoan0702.ovpn
+```
+2.Kiểm tra địa chỉ ip mới
 
+```
+curl 10.10.10.10/whoami
 ```
