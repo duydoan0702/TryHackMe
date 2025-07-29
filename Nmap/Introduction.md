@@ -1,7 +1,7 @@
 
 # TryHackMe
 
-## 🧩 Challenge: Deloy
+## 🧩 Challenge: Introduction
 
 ## 📝 Description
 Xin lưu ý: Máy này chỉ dùng cho mục đích quét. Bạn không cần phải đăng nhập hoặc khai thác bất kỳ lỗ hổng bảo mật nào để truy cập.
