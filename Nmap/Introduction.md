@@ -26,8 +26,10 @@ Trước mắt, điều quan trọng là bạn phải hiểu: quét cổng là g
 
 ---
 
-## 🧠 Chiến lược giải
-- 
+## 🧠 Nhiệm vụ
+- 1.Cấu trúc mạng nào được sử dụng để chuyển hướng lưu lượng đến đúng ứng dụng trên máy chủ?
+- 2. Có bao nhiêu trong số những tính năng này có sẵn trên bất kỳ máy tính nào có kết nối mạng?
+- 3. Có bao nhiêu trong số này được coi là "well-Known"? (Đây là những con số "chuẩn" được đề cập trong nhiệm vụ)
   
 ## 🔧 Công cụ
 1. **openvpn**
@@ -37,12 +39,26 @@ Trước mắt, điều quan trọng là bạn phải hiểu: quét cổng là g
 
 ## 🛠️ Cách giải
 
-1. Kiểm tra các `port` của máy mục tiêu
+1. Trong cấu trúc mạng người ta dùng `port` để định tuyến lưu lượng đến ứng dụng trên máy chủ
 
 ```
-nmap -Pn 10.10.96.169
+ports
 ```
-- Nếu không dùng `-Pn` để bỏ qua lệnh ping thì sẽ khi quét port bằng các câu lệnh như `nmap 10.10.69.169` sẽ bị lỗi `Host Seems down`.
+
+2. Có `65535` port khả dụng trên mỗi máy tính có kết nối mạng.
+
+3. **Well-knowns ports** là các cổng có số từ 0 đến 1023.
+- Các port phổ biến :
+
+| Port | Service |
+|------|---------|
+| 21   | FTP     |
+| 22   | SSH     |
+| 25   | SMTP    |
+| 53   | DNS     |
+| 80   | HTTP    |
+| 443  | HTTPS   |
+
 
 
 
