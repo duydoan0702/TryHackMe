@@ -31,9 +31,6 @@ Trước mắt, điều quan trọng là bạn phải hiểu: quét cổng là g
 - 2. Có bao nhiêu trong số những tính năng này có sẵn trên bất kỳ máy tính nào có kết nối mạng?
 - 3. Có bao nhiêu trong số này được coi là "well-Known"? (Đây là những con số "chuẩn" được đề cập trong nhiệm vụ)
   
-## 🔧 Công cụ
-1. **openvpn**
-
 ---
 
 
