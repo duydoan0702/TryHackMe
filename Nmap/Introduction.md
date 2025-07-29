@@ -37,4 +37,13 @@ Trước mắt, điều quan trọng là bạn phải hiểu: quét cổng là g
 
 ## 🛠️ Cách giải
 
-1. 
+1. Kiểm tra các `port` của máy mục tiêu
+
+```
+nmap -Pn 10.10.96.169
+```
+- Nếu không dùng `-Pn` để bỏ qua lệnh ping thì sẽ khi quét port bằng các câu lệnh như `nmap 10.10.69.169` sẽ bị lỗi `Host Seems down`.
+
+
+
+
