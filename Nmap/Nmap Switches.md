@@ -27,8 +27,18 @@ Bạn sẽ sử dụng công tắc nào để lưu kết quả nmap ở ba đị
 8. Bạn sẽ sử dụng công tắc nào để lưu kết quả nmap ở định dạng "normal"?
 
 9. Một định dạng đầu ra rất hữu ích: làm thế nào để lưu kết quả theo định dạng "grepable"?
+10. Đôi khi kết quả chúng ta nhận được vẫn chưa đủ. Nếu không quan tâm đến mức độ ồn ào, chúng ta có thể bật chế độ "aggressive". Đây là một công tắc tắt để kích hoạt phát hiện dịch vụ, phát hiện hệ điều hành, theo dõi tuyến đường và quét tập lệnh phổ biến.
 
-  
+Bạn sẽ kích hoạt cài đặt này như thế nào?
+
+11. Nmap cung cấp năm cấp độ mẫu "thời gian". Về cơ bản, chúng được sử dụng để tăng tốc độ quét. Tuy nhiên, hãy cẩn thận: tốc độ cao hơn sẽ gây nhiễu và có thể phát sinh lỗi!
+
+Làm thế nào để thiết lập mẫu thời gian ở cấp độ 5?
+
+12. Làm thế nào để kích hoạt một tập lệnh từ thư viện tập lệnh nmap (sẽ nói thêm về điều này sau!)?
+
+13.   Bạn sẽ kích hoạt tất cả các tập lệnh trong danh mục "lỗ hổng" như thế nào?
+    
 ## 🔧 Công cụ
 1. **openvpn**
 
@@ -61,3 +71,30 @@ Bạn sẽ sử dụng công tắc nào để lưu kết quả nmap ở ba đị
 8. Xuất kết quả ở dạng normal, ta dùng: `-oN`
 
 9. Xuất kết quả ở dạng grepable, ta dùng: `-oG`
+
+10. Aggressive mode bật các tính năng như: phát hiện dịch vụ `-sV`, phát hiện hệ điều hành `-O`, truy vết đường đi `--traceroute` , và quét script mặc định `-sC`.
+
+```
+-A
+```
+
+11. Nmap có 6 cấp độ thời gian từ `T0` đến `T5`. Cấp 5 là nhanh nhất
+
+```
+-T5
+```
+
+12. Nmap có một thư viện các script sẵn gọi là NSE (Nmap Scripting Engine).
+Để chạy một script cụ thể, ta dùng tuỳ chọn --script=<script-name>.
+
+```
+--script
+```
+13.  Mỗi script trong NSE được gắn với một hoặc nhiều category như auth, default, vuln, discovery
+
+```
+--script=vlun
+```
+
+
+
