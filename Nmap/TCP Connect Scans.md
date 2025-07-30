@@ -13,7 +13,15 @@ Tóm tắt lại, bắt tay ba bước bao gồm ba giai đoạn. Đầu tiên, 
 <img width="1138" height="69" alt="image" src="https://github.com/user-attachments/assets/14671a2e-7289-46b7-95f0-0657896e0cea" />
 
 
+Đây là một trong những nguyên tắc cơ bản của mạng TCP/IP, nhưng nó liên quan như thế nào đến Nmap?
 
+Đúng như tên gọi, quét TCP Connect hoạt động bằng cách thực hiện bắt tay ba chiều với từng cổng đích. Nói cách khác, Nmap cố gắng kết nối với từng cổng TCP được chỉ định và xác định xem dịch vụ có mở hay không bằng phản hồi mà nó nhận được.
+
+Ví dụ: nếu một cổng bị đóng, RFC 9293 quy định rằng:
+
+"... Nếu kết nối không tồn tại (ĐÃ ĐÓNG), thì một lệnh đặt lại sẽ được gửi để phản hồi bất kỳ phân đoạn nào đến ngoại trừ một lệnh đặt lại khác. Một phân đoạn SYN không khớp với kết nối hiện có sẽ bị từ chối theo cách này."
+
+Nói cách khác, nếu Nmap gửi một yêu cầu TCP với cờ SYN được đặt thành một cổng đã đóng, máy chủ đích sẽ phản hồi bằng một gói tin TCP với cờ RST (Đặt lại) được đặt. Bằng phản hồi này, Nmap có thể xác định rằng cổng đã đóng.
 
 > Link: https://tryhackme.com/room/furthernmap
 
