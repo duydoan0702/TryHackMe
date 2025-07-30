@@ -93,7 +93,7 @@ Làm thế nào để thiết lập mẫu thời gian ở cấp độ 5?
 13.  Mỗi script trong NSE được gắn với một hoặc nhiều category như auth, default, vuln, discovery
 
 ```
---script=vlun
+--script=vuln
 ```
 
 
