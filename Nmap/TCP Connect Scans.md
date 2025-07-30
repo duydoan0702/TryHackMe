@@ -46,14 +46,19 @@ iptables -I INPUT -p tcp --dport <port> -j REJECT --reject-with tcp-reset
 
 ---
 
-## 🧠 Chiến lược giải
-
-  
-## 🔧 Công cụ
+## 🧠 Nhiệm vụ
+1. RFC nào định nghĩa hành vi thích hợp cho giao thức TCP?
+2. Nếu một cổng bị đóng, máy chủ sẽ gửi cờ nào để chỉ ra điều này?
 
 ---
 
 
 ## 🛠️ Cách giải
 
-1. 
+1. RFC 9293 là tài liệu gốc định nghĩa giao thức TCP ( Tranmission Control Protocol )
+
+```
+RFC 9293
+```
+
+2. Nếu một gói `TCP SYN` gửi đến một cổng đóng, máy chủ sẽ phản hồi bằng một gói có cờ `RST` để từ chối.
