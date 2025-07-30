@@ -25,6 +25,22 @@ Nói cách khác, nếu Nmap gửi một yêu cầu TCP với cờ SYN được 
 
 <img width="262" height="229" alt="image" src="https://github.com/user-attachments/assets/ef9c830c-5d19-4d83-9875-b458bea89d7b" />
 
+Tuy nhiên, nếu yêu cầu được gửi đến một cổng mở, mục tiêu sẽ phản hồi bằng một gói tin TCP với cờ SYN/ACK được đặt. Sau đó, Nmap đánh dấu cổng này là đang mở (và hoàn tất quá trình bắt tay bằng cách gửi lại một gói tin TCP với cờ ACK được đặt).
+
+Điều này hoàn toàn ổn, tuy nhiên, vẫn còn một khả năng thứ ba.
+
+Điều gì sẽ xảy ra nếu cổng đang mở nhưng bị ẩn sau tường lửa?
+
+Nhiều tường lửa được cấu hình để loại bỏ các gói tin đến. Nmap gửi một yêu cầu TCP SYN và không nhận được phản hồi nào. Điều này cho thấy cổng đang được tường lửa bảo vệ và do đó cổng được coi là đã bị lọc.
+
+Tuy nhiên, việc cấu hình tường lửa để phản hồi bằng một gói tin TCP RST rất dễ dàng. Ví dụ: trong IPtables cho Linux, một phiên bản đơn giản của lệnh sẽ như sau:
+
+```
+iptables -I INPUT -p tcp --dport <port> -j REJECT --reject-with tcp-reset
+```
+
+Điều này có thể khiến việc đọc chính xác mục tiêu trở nên cực kỳ khó khăn (nếu không muốn nói là không thể).
+
 
 > Link: https://tryhackme.com/room/furthernmap
 
