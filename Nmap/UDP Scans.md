@@ -14,6 +14,9 @@ Khi một gói tin được gửi đến một cổng **UDP đã đóng**, mục
 
 Do khó khăn trong việc xác định xem một cổng UDP có thực sự mở hay không, nên việc quét UDP thường **chậm hơn** đáng kể so với các loại quét TCP khác (mất khoảng **20 phút để quét 1000 cổng đầu tiên**, với kết nối tốt). Vì lý do này, việc chạy quét Nmap với tùy chọn `--top-ports <number>` thường là một phương pháp hay. Ví dụ: quét với nmap `-sU --top-ports 20 <target>`. Lệnh này sẽ quét 20 cổng UDP được sử dụng phổ biến nhất, giúp rút ngắn thời gian quét xuống mức chấp nhận được.
 
+<img width="626" height="474" alt="image" src="https://github.com/user-attachments/assets/c00d45d8-4d2f-43e8-bdab-57e794b98f6e" />
+
+
 ---
 
 Khi quét các cổng UDP, Nmap thường gửi các yêu cầu hoàn toàn trống - chỉ là các gói UDP thô. Tuy nhiên, đối với các cổng thường bị chiếm dụng bởi các dịch vụ quen thuộc, nó sẽ gửi một tải trọng giao thức cụ thể, có nhiều khả năng tạo ra phản hồi từ đó có thể rút ra kết quả chính xác hơn.
