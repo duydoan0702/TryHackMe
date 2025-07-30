@@ -34,4 +34,9 @@ Về quét mạng, chúng ta cũng sẽ xem xét sơ qua về quét ICMP (hay "p
 
 <img width="650" height="325" alt="image" src="https://github.com/user-attachments/assets/36677c98-9e5e-4c9d-ad52-c95670bbbfef" />
 
+2. Quét nửa mở ( -sS )
+
+<img width="564" height="154" alt="image" src="https://github.com/user-attachments/assets/b919f244-244c-46c1-a85f-b04b7a73c02e" />
+
+
    
