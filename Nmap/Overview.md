@@ -38,5 +38,15 @@ Về quét mạng, chúng ta cũng sẽ xem xét sơ qua về quét ICMP (hay "p
 
 <img width="564" height="154" alt="image" src="https://github.com/user-attachments/assets/b919f244-244c-46c1-a85f-b04b7a73c02e" />
 
+3. Các câu lệnh
+
+<img width="675" height="731" alt="image" src="https://github.com/user-attachments/assets/d798b37c-7125-4297-9e8f-2ce3a347326e" />
+
+- Đa số các câu lệnh điều bị chặn do hệ thống bảo mật
+
+<img width="981" height="614" alt="image" src="https://github.com/user-attachments/assets/b3de33c4-d0bd-45e0-afac-be0a25bc146c" />
+
+
+
 
    
