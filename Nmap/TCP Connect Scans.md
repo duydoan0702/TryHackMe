@@ -23,6 +23,9 @@ Ví dụ: nếu một cổng bị đóng, RFC 9293 quy định rằng:
 
 Nói cách khác, nếu Nmap gửi một yêu cầu TCP với cờ SYN được đặt thành một cổng đã đóng, máy chủ đích sẽ phản hồi bằng một gói tin TCP với cờ RST (Đặt lại) được đặt. Bằng phản hồi này, Nmap có thể xác định rằng cổng đã đóng.
 
+<img width="262" height="229" alt="image" src="https://github.com/user-attachments/assets/ef9c830c-5d19-4d83-9875-b458bea89d7b" />
+
+
 > Link: https://tryhackme.com/room/furthernmap
 
 ---
