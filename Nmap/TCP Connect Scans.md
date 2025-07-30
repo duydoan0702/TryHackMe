@@ -1,38 +1,27 @@
 
 # TryHackMe
 
-## 🧩 Challenge: Deloy
+## 🧩 Challenge: TCP Connect Scans
 
 ## 📝 Description
-Xin lưu ý: Máy này chỉ dùng cho mục đích quét. Bạn không cần phải đăng nhập hoặc khai thác bất kỳ lỗ hổng bảo mật nào để truy cập.
+Để hiểu về quét TCP Connect (-sT), điều quan trọng là bạn phải quen thuộc với bắt tay ba bước TCP. Nếu thuật ngữ này còn mới với bạn, bạn nên hoàn thành bài học Mạng cơ bản trước khi tiếp tục.
 
-Nếu bạn đang sử dụng TryHackMe AttackBox, bạn sẽ cần triển khai riêng. Nhấp vào nút Khởi động AttackBox ở góc trên bên phải để khởi chạy máy.
+Tóm tắt lại, bắt tay ba bước bao gồm ba giai đoạn. Đầu tiên, thiết bị đầu cuối kết nối (trong trường hợp này là máy tấn công của chúng ta) gửi một yêu cầu TCP đến máy chủ mục tiêu với cờ SYN được đặt. Sau đó, máy chủ xác nhận gói tin này bằng một phản hồi TCP chứa cờ SYN, cũng như cờ ACK. Cuối cùng, thiết bị đầu cuối của chúng ta hoàn tất quá trình bắt tay bằng cách gửi một yêu cầu TCP với cờ ACK được đặt.
+
+
 
 > Link: https://tryhackme.com/room/furthernmap
 
 ---
 
 ## 🧠 Chiến lược giải
-- Kết nối với máy ảo
+
   
 ## 🔧 Công cụ
-1. **openvpn**
-Là một phần mềm mã hóa mã nguồn mở để tạo **mạng riêng ảo(VPN)** giữa 2 điểm client <-> server qua giao thức **SSl/TLS** . Nó cho phép :
-  - Mã hóa lưu lượng mạng
-  - Giả lập kết nối nội bộ từ xa
-  - Truy cập các hệ thống nội bộ (như các máy trong Tryhackme/Hackthebox)
+
 ---
 
 
 ## 🛠️ Cách giải
 
-1. Bấm vào nút `Start Machine` rồi tải file `.opvn` về và kết nối bằng `openvpn`
-
-```
-sudo openvpn duydoan0702.ovpn
-```
-2.Kiểm tra địa chỉ ip mới
-
-```
-curl 10.10.10.10/whoami
-```
+1. 
