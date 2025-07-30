@@ -30,4 +30,5 @@ Về quét mạng, chúng ta cũng sẽ xem xét sơ qua về quét ICMP (hay "p
 
 ## 🛠️ Cách giải
 
-1. 
+1. Quét kết nối TCP
+   
