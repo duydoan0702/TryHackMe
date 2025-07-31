@@ -37,3 +37,8 @@ nmap -sn 172.16.0.0/16
   - Dò thiết bị lạ trong mạng (ví dụ: ai đang xài chùa Wi-Fi).
 
   - Là bước khởi đầu trong quá trình quét mạng nội bộ.
+ 
+  <img width="576" height="377" alt="image" src="https://github.com/user-attachments/assets/c0c8366e-cda4-406f-b6d4-c1146b3ecbf5" />
+
+
+
