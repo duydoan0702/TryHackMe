@@ -46,4 +46,13 @@ Các tập lệnh Nmap được tích hợp sẵn menu trợ giúp, có thể tr
 maxlist
 ```
 
+<img width="776" height="203" alt="image" src="https://github.com/user-attachments/assets/a76af22f-1745-49c4-b065-e705b46e1fd4" />
+
+| Thông tin                              | Chi tiết                                                                 |
+|----------------------------------------|-------------------------------------------------------------------------|
+| `21/tcp open ftp`                      | Cổng 21 đang mở và đang chạy dịch vụ FTP                               |
+| `Anonymous FTP login allowed (FTP code 230)` | Cho phép đăng nhập anonymous (với mã thành công 230)                     |
+| `Can't get directory listing: TIMEOUT` | Đăng nhập được, nhưng không thể liệt kê thư mục do **timeout** (hết thời gian chờ) |
+
+
 
