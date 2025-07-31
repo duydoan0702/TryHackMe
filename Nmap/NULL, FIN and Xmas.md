@@ -4,17 +4,17 @@
 ## 🧩 Challenge: NULL,FIN and Xmas
 
 ## 📝 Description
-Quét cổng TCP NULL, FIN và Xmas ít được sử dụng hơn bất kỳ loại nào khác mà chúng tôi đã đề cập, vì vậy chúng tôi sẽ không đi sâu vào chi tiết ở đây. Cả ba loại đều được liên kết với nhau và được sử dụng chủ yếu vì chúng có xu hướng "ẩn" hơn, nói một cách tương đối, so với quét "ẩn" SYN. Bắt đầu với quét NULL:
+Quét cổng **TCP NULL, FIN và Xmas** ít được sử dụng hơn bất kỳ loại nào khác mà chúng tôi đã đề cập, vì vậy chúng tôi sẽ không đi sâu vào chi tiết ở đây. Cả ba loại đều được liên kết với nhau và được sử dụng chủ yếu vì chúng có xu hướng "`Stealth`" hơn, nói một cách tương đối, so với quét "Stealth" Scan. Bắt đầu với quét NULL:
 
-- Đúng như tên gọi, quét NULL (-sN) xảy ra khi yêu cầu TCP được gửi mà không có cờ nào được đặt. Theo RFC, máy chủ đích sẽ phản hồi bằng RST nếu cổng bị đóng.
+- Đúng như tên gọi, quét NULL (`-sN`) xảy ra khi yêu cầu TCP được gửi mà không có cờ nào được đặt. Theo RFC, máy chủ đích sẽ phản hồi bằng RST nếu cổng bị đóng.
 
 <img width="1020" height="339" alt="image" src="https://github.com/user-attachments/assets/fbc546f7-f9ec-49e7-8cb7-f84f380e38e3" />
 
-- Quét FIN (-sF) hoạt động gần như giống hệt nhau; tuy nhiên, thay vì gửi một gói tin hoàn toàn trống, một yêu cầu sẽ được gửi kèm cờ FIN (thường được dùng để đóng nhẹ nhàng một kết nối đang hoạt động). Một lần nữa, Nmap mong đợi một RST nếu cổng bị đóng.
+- Quét FIN (`-sF`) hoạt động gần như giống hệt nhau; tuy nhiên, thay vì gửi một gói tin hoàn toàn trống, một yêu cầu sẽ được gửi kèm cờ FIN (thường được dùng để đóng nhẹ nhàng một kết nối đang hoạt động). Một lần nữa, Nmap mong đợi một RST nếu cổng bị đóng.
 
 <img width="1017" height="339" alt="image" src="https://github.com/user-attachments/assets/92af2ef7-4ea3-48ae-a10e-2da35fb9747b" />
 
-- Giống như hai loại quét khác trong lớp này, quét Xmas (-sX) gửi một gói tin TCP bị lỗi và mong đợi phản hồi RST cho các cổng đã đóng. Nó được gọi là quét Xmas vì các cờ mà nó đặt (PSH, URG và FIN) khiến nó trông giống như một cây thông Noel nhấp nháy khi được xem như một gói tin bị bắt trong Wireshark.
+- Giống như hai loại quét khác trong lớp này, quét Xmas (`-sX`) gửi một gói tin TCP bị lỗi và mong đợi phản hồi RST cho các cổng đã đóng. Nó được gọi là quét Xmas vì các cờ mà nó đặt (PSH, URG và FIN) khiến nó trông giống như một cây thông Noel nhấp nháy khi được xem như một gói tin bị bắt trong Wireshark.
 
 <img width="1130" height="337" alt="image" src="https://github.com/user-attachments/assets/b3f79f33-51ed-4e14-9dd7-052779d4cfe1" />
 
@@ -38,5 +38,15 @@ Tuy nhiên, mục tiêu ở đây tất nhiên là tránh tường lửa. Nhiề
 
 ## 🛠️ Cách giải
 
-1. 
+1. Trong TCP Xmas scan, 3 cờ URG, PUSH, FIN đều được bật — tạo nên hiệu ứng như "cây thông Noel".
+
+2. NULL, FIN, và Xmas scans được thế kế để tránh **firewall** và **hệ thống IDS**
+
+```
+firewall evasion
+```
+
+4. Hệ điều hành Windows không tuân theo RFC 793 chuẩn, nên khi gặp các loại scan đặc biệt như NULL/FIN/Xmas, nó luôn trả về RST dù cổng mở hay đóng.
+
+ 
 
