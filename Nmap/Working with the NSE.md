@@ -54,5 +54,10 @@ maxlist
 | `Anonymous FTP login allowed (FTP code 230)` | Cho phép đăng nhập anonymous (với mã thành công 230)                     |
 | `Can't get directory listing: TIMEOUT` | Đăng nhập được, nhưng không thể liệt kê thư mục do **timeout** (hết thời gian chờ) |
 
+### chúng ta có thể kết nối FTP thủ công để truy cập vào server như sau
+
+<img width="575" height="328" alt="image" src="https://github.com/user-attachments/assets/c39fdca6-5c7a-40f4-83d4-5cbe1b09e2ec" />
+
+
 
 
