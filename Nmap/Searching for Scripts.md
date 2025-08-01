@@ -23,13 +23,14 @@ Cách thứ hai để tìm kiếm tập lệnh khá đơn giản là sử dụng
 
 <img width="728" height="181" alt="image" src="https://github.com/user-attachments/assets/3106cf9d-6992-4879-8ed5-10b1b8c01e91" />
 
-Lưu ý việc sử dụng dấu sao (`*)` ở hai bên của từ khóa tìm kiếm.
+Lưu ý việc sử dụng dấu sao (`*`) ở hai bên của từ khóa tìm kiếm.
 
 Các kỹ thuật tương tự cũng có thể được sử dụng để tìm kiếm theo danh mục tập lệnh. Ví dụ:
 `grep "safe" /usr/share/nmap/scripts/script.db`
 
 
 <img width="766" height="196" alt="image" src="https://github.com/user-attachments/assets/8d59e07e-4fd5-43c7-9d7f-586209fbb315" />
+
 ---
 Trước đây chúng tôi đã đề cập rằng trang web Nmap chứa một danh sách các tập lệnh, vậy điều gì sẽ xảy ra nếu một trong số chúng bị thiếu trong thư mục tập lệnh cục bộ? Lệnh `sudo apt update && sudo apt install nmap` tiêu chuẩn sẽ khắc phục được lỗi này; tuy nhiên, bạn cũng có thể cài đặt các tập lệnh theo cách thủ công bằng cách tải xuống tập lệnh từ Nmap (`sudo wget -O /usr/share/nmap/scripts/<script-name>`.`nse https://svn.nmap.org/nmap/scripts/<script-name>.nse`). Sau đó, bạn phải tiếp tục với lệnh nmap `--script-updatedb` để cập nhật tệp `script.db` để chứa tập lệnh mới tải xuống.
 
