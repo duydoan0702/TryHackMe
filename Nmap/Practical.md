@@ -26,7 +26,7 @@ Lưu ý: Câu trả lời sẽ có trong kết quả quét của bạn. Hãy suy
 
 4. Thực hiện quét TCP SYN trên 5000 cổng đầu tiên của mục tiêu -- có bao nhiêu cổng được hiển thị là đang mở?
 
-5. Mở Wireshark (xem hướng dẫn tại Wireshark Room của Cryillic) và thực hiện quét TCP Connect trên cổng 80 của mục tiêu, đồng thời theo dõi kết quả. Đảm bảo bạn hiểu rõ những gì đang diễn ra. Triển khai tập lệnh ftp-anon trên hộp. Nmap có thể đăng nhập thành công vào máy chủ FTP trên cổng 21 không? (Có/Không)
+5. Mở Wireshark (xem hướng dẫn tại Wireshark Room của Cryillic) và thực hiện quét TCP Connect trên cổng 80 của mục tiêu, đồng thời theo dõi kết quả. Đảm bảo bạn hiểu rõ những gì đang diễn ra. Triển khai tập lệnh `ftp-anon` trên hộp. Nmap có thể đăng nhập thành công vào máy chủ FTP trên cổng 21 không? (Có/Không)
 
 ---
 
