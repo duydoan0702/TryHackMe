@@ -43,7 +43,15 @@ Lưu ý: Câu trả lời sẽ có trong kết quả quét của bạn. Hãy suy
 
 3. `no response` : có nghĩa là Nmap không nhận được bất kì phản hồi nào từ máy đích.
 
-4. 
+4.
+### 🔍 So sánh `-sS` vs `-sT`
+
+| Đặc điểm           | `-sS` (SYN Scan)           | `-sT` (Connect Scan)         |
+|--------------------|----------------------------|------------------------------|
+| Loại kết nối       | Half-open (ẩn mình)        | Full TCP handshake (thật)    |
+| Cần quyền root     | Có                         | Không                        |
+| Dễ bị phát hiện    | Khó phát hiện hơn          | Dễ bị phát hiện hơn          |
+| Dùng khi nào       | Khi có quyền root, muốn stealth | Khi không có quyền root |
 
 
 
