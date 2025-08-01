@@ -37,7 +37,19 @@ Lưu ý: Câu trả lời sẽ có trong kết quả quét của bạn. Hãy suy
 
 <img width="552" height="236" alt="image" src="https://github.com/user-attachments/assets/d4c4561f-5e43-40b0-b2d0-912a93a4868f" />
 
-2. 
+2. Xmas Scan là một kỹ thuật quét `port` 
+
+<img width="597" height="157" alt="image" src="https://github.com/user-attachments/assets/d577606b-0610-485b-b52b-fdcb3c7723a2" />
+
+3. 
+
+
+
+
+
+
+
+
 
 
 
