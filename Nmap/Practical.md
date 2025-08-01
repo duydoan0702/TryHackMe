@@ -45,6 +45,9 @@ Lưu ý: Câu trả lời sẽ có trong kết quả quét của bạn. Hãy suy
 
 4. So sánh các kỹ thuật quét TCP trong Nmap
 
+<img width="576" height="231" alt="image" src="https://github.com/user-attachments/assets/6ccc0f9c-88ce-420d-b5bd-0349ceea2071" />
+
+
 | Tùy chọn | Tên đầy đủ         | Gửi gói tin gì              | Cần root | Dễ bị phát hiện | Phản hồi nếu cổng mở | Phản hồi nếu cổng đóng | Ghi log trên server |
 |---------|---------------------|-----------------------------|----------|------------------|-----------------------|-------------------------|----------------------|
 | `-sT`   | TCP Connect Scan     | SYN → SYN-ACK → ACK         | ❌       | ✅ Cao           | Kết nối hoàn tất       | RST                     | ✅ Có (vì kết nối thật)|
