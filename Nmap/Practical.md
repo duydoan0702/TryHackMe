@@ -18,7 +18,7 @@ Hãy vận dụng những kiến thức đã học để quét máy mục tiêu 
 ## 🧠 Nhiệm vụ
 1. Địa chỉ IP đích có phản hồi yêu cầu ICMP echo (ping) không (Có/Không)?
 
-2. Thực hiện quét Xmas trên 999 cổng đầu tiên của mục tiêu -- có bao nhiêu cổng được hiển thị là đang mở hoặc được lọc?
+2. Thực hiện quét Xmas trên 999 cổng đầu tiên của mục tiêu có bao nhiêu cổng được hiển thị là đang mở hoặc được lọc?
 
 3. Có một lý do được đưa ra cho việc này -- đó là gì?
 
@@ -34,6 +34,10 @@ Lưu ý: Câu trả lời sẽ có trong kết quả quét của bạn. Hãy suy
 ## 🛠️ Cách giải
 
 1. Địa chỉ IP không phải hồi yêu cầu ICMP nên ta `-Pn` để bỏ qua lệnh ping
+
+<img width="552" height="236" alt="image" src="https://github.com/user-attachments/assets/d4c4561f-5e43-40b0-b2d0-912a93a4868f" />
+
+2. 
 
 
 
