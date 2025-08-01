@@ -51,4 +51,33 @@ Tên tệp của tập lệnh xác định hệ điều hành cơ bản của m�
 
 ## 🛠️ Cách giải
 
-1. 
+1.
+
+```
+smb-os-discovery.nse
+```
+
+- Thư mục `/usr/share/nmap/scripts/` chứa tất cả các script .nse mà Nmap sử dụng.
+- Bạn có thể dùng lệnh sau để tìm các script liên quan đến SMB:
+```
+ls | grep smb
+```
+
+2. Mở script và tìm hiểu
+
+```
+cat /usr/share/nmap/scripts/smb-os-discovery.nse
+```
+- Trong script sẽ có dòng sau :
+
+```
+dependencies = {"smb-brute"}
+```
+
+
+
+
+
+
+
+
