@@ -41,7 +41,9 @@ Lưu ý: Câu trả lời sẽ có trong kết quả quét của bạn. Hãy suy
 
 <img width="597" height="157" alt="image" src="https://github.com/user-attachments/assets/d577606b-0610-485b-b52b-fdcb3c7723a2" />
 
-3. 
+3. `no response` : có nghĩa là Nmap không nhận được bất kì phản hồi nào từ máy đích.
+
+4. 
 
 
 
