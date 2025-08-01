@@ -53,7 +53,9 @@ Lưu ý: Câu trả lời sẽ có trong kết quả quét của bạn. Hãy suy
 | `-sX`   | TCP Xmas Scan        | FIN + PSH + URG             | ✅       | ❌ Thấp          | Không phản hồi         | RST                     | ❌ Không               |
 | `-sN`   | TCP NULL Scan        | Không cờ nào                | ✅       | ❌ Thấp          | Không phản hồi         | RST                     | ❌ Không               |
 
+5. Nmap có thể đăng nhập thành công vào máy chủ FTP trên cổng 21
 
+<img width="596" height="201" alt="image" src="https://github.com/user-attachments/assets/394a3e01-0cc2-4fd7-824b-b505913d83fe" />
 
 
 
