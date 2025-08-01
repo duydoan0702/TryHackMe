@@ -63,6 +63,9 @@ smb-os-discovery.nse
 ls | grep smb
 ```
 
+<img width="362" height="500" alt="image" src="https://github.com/user-attachments/assets/653cd3e2-eb35-4ee5-a6cc-39520867512a" />
+
+
 2. Mở script và tìm hiểu
 
 ```
