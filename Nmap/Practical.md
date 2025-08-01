@@ -43,16 +43,15 @@ Lưu ý: Câu trả lời sẽ có trong kết quả quét của bạn. Hãy suy
 
 3. `no response` : có nghĩa là Nmap không nhận được bất kì phản hồi nào từ máy đích.
 
-4.
-### 🔍 So sánh `-sS` vs `-sT`
+4. So sánh các kỹ thuật quét TCP trong Nmap
 
-| Đặc điểm           | `-sS` (SYN Scan)           | `-sT` (Connect Scan)         |
-|--------------------|----------------------------|------------------------------|
-| Loại kết nối       | Half-open (ẩn mình)        | Full TCP handshake (thật)    |
-| Cần quyền root     | Có                         | Không                        |
-| Dễ bị phát hiện    | Khó phát hiện hơn          | Dễ bị phát hiện hơn          |
-| Dùng khi nào       | Khi có quyền root, muốn stealth | Khi không có quyền root |
-
+| Tùy chọn | Tên đầy đủ         | Gửi gói tin gì              | Cần root | Dễ bị phát hiện | Phản hồi nếu cổng mở | Phản hồi nếu cổng đóng | Ghi log trên server |
+|---------|---------------------|-----------------------------|----------|------------------|-----------------------|-------------------------|----------------------|
+| `-sT`   | TCP Connect Scan     | SYN → SYN-ACK → ACK         | ❌       | ✅ Cao           | Kết nối hoàn tất       | RST                     | ✅ Có (vì kết nối thật)|
+| `-sS`   | TCP SYN Scan         | SYN                         | ✅       | ❌ Thấp          | SYN-ACK (sau đó RST)   | RST                     | ❌ Ít hoặc không       |
+| `-sF`   | TCP FIN Scan         | FIN                         | ✅       | ❌ Thấp          | Không phản hồi         | RST                     | ❌ Không               |
+| `-sX`   | TCP Xmas Scan        | FIN + PSH + URG             | ✅       | ❌ Thấp          | Không phản hồi         | RST                     | ❌ Không               |
+| `-sN`   | TCP NULL Scan        | Không cờ nào                | ✅       | ❌ Thấp          | Không phản hồi         | RST                     | ❌ Không               |
 
 
 
